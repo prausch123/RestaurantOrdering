@@ -1,0 +1,54 @@
+body{
+    background-color:#e4e4e4;
+    font-family: verdana;
+    font-size: 15px;
+}
+
+.centered{
+    text-align:center;
+}
+
+.internalContent{
+    text-align:center;
+    
+    margin:20px;
+}
+
+.title{
+    font-size:18px;
+    font-weight:bold;
+    
+    color:#2299a2;
+}
+
+.topHeader{
+    font-size:30px;
+    font-weight:bold;
+    
+    color:#FF6524;
+    
+    text-align:center;
+}
+
+.header{
+    font-size:20px;
+    font-weight:bold;
+    
+    color:#3887D6;
+}
+
+.contentHolder{
+    width:80%;
+    height:auto;
+    
+    padding:10px;
+    margin:20px auto;
+    
+    background-color:white;
+    box-shadow: 5px 5px 5px #EDFFD9;
+    
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
