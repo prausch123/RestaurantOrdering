@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import model.FakeDB;
 import model.IMenuStrategy;
+import model.MySQL_DB;
 
 /**
  *
@@ -38,7 +39,8 @@ public class FormController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         
-        IMenuStrategy ims = new FakeDB();
+        //IMenuStrategy ims = new FakeDB();
+        IMenuStrategy ims = new MySQL_DB("jdbc:mysql://localhost:3306/restaurant", "root", "admin");
         
         HttpSession session = request.getSession(true);
         session.setAttribute("database", ims);
