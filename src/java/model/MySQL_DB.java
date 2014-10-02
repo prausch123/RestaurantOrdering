@@ -49,6 +49,8 @@ public class MySQL_DB implements IMenuStrategy{
                     item = new MenuItem(rs.getString("name"), rs.getDouble("price"), ItemType.DRINK);
                 } else if(rs.getString("type").equalsIgnoreCase("APPETIZER")) {
                     item = new MenuItem(rs.getString("name"), rs.getDouble("price"), ItemType.APPETIZER);
+                } else {
+                    throw new IllegalArgumentException("A item in your database does not have a correct Item Type");
                 }
                 this.addItem(item);
             }
